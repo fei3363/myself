@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="飛飛 Phoebe｜資安講師、滲透測試實作者與教育創業者。讓資安知識變得容易理解，也讓實作變得更容易開始。" />
+  <meta property="og:title" content="飛飛 Phoebe｜資安教育・滲透測試・實作平台" />
+  <meta property="og:description" content="把複雜的資安知識講清楚，讓更多人能透過實作走進資安世界。" />
+  <meta property="og:type" content="website" />
+  <title>飛飛 Phoebe｜About Me</title>
+  <style>
+    :root{color-scheme:dark;--bg:#090e1a;--panel:#111b2b;--edge:#26354b;--ink:#f3f6ff;--muted:#a7b5c8;--accent:#74e3c3;--accent2:#96b7ff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 82% 5%,#172c44 0,transparent 34%),radial-gradient(circle at 0 45%,#102a30 0,transparent 32%),var(--bg);font-family:Inter,"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;color:var(--ink);line-height:1.75}
+    a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:6px}
+    .wrap{width:min(1100px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:26px 0;gap:16px}.logo{font-weight:850;letter-spacing:.02em;font-size:19px}.logo span{color:var(--accent)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover,.subtle-link:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1.55fr .85fr;gap:40px;align-items:center;padding:92px 0 100px}.eyebrow{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.hero h1{font-size:clamp(50px,7vw,88px);line-height:1.13;letter-spacing:-.055em;margin:19px 0}.hero h1 span{color:var(--accent)}.lead{font-size:clamp(18px,2.3vw,24px);font-weight:650;line-height:1.5;max-width:660px}.desc{color:var(--muted);max-width:625px;font-size:16px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border-radius:12px;font-weight:750;border:1px solid var(--edge);transition:transform .2s,border-color .2s}.btn:hover{transform:translateY(-2px);border-color:var(--accent)}.btn.primary{color:#06221d;background:var(--accent);border-color:var(--accent)}
+    .art{position:relative;aspect-ratio:1;display:grid;place-items:center;border:1px solid #294457;border-radius:32px;background:linear-gradient(135deg,#142537,#14222b 55%,#142c33);box-shadow:0 25px 80px #0004;overflow:hidden}.art:before,.art:after{content:"";position:absolute;width:240px;height:240px;border:1px solid #4ebda955;border-radius:50%}.art:before{transform:translate(70px,-70px)}.art:after{transform:translate(-80px,90px)}.avatar{width:53%;aspect-ratio:1;display:grid;place-items:center;border-radius:30%;font-weight:900;font-size:clamp(70px,12vw,150px);color:#b5ffeb;background:linear-gradient(135deg,#367d7d,#263a5c);box-shadow:0 20px 65px #0006;z-index:1}.arttag{position:absolute;bottom:25px;left:25px;font-size:12px;letter-spacing:.13em;color:var(--muted)}
+    section{padding:36px 0 80px}.section-top{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:25px}.section-top h2{margin:0;font-size:clamp(27px,4vw,40px);letter-spacing:-.03em}.section-top p{margin:0;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{border:1px solid var(--edge);border-radius:19px;background:#111b2bc9;padding:26px}.card .num{font-size:13px;font-weight:750;color:var(--accent2)}.card h3{margin:13px 0 9px;font-size:21px}.card p{margin:0;color:var(--muted);font-size:15px}
+    .story{display:grid;grid-template-columns:1fr 1.25fr;gap:24px;align-items:start}.quote{margin:0;border-left:3px solid var(--accent);padding:4px 0 4px 22px;color:#e9fef8;font-weight:700;font-size:clamp(22px,3vw,30px);line-height:1.6}.story p{color:var(--muted);margin-top:0}.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.tag{border:1px solid #35505d;border-radius:100px;padding:6px 13px;font-size:13px;color:#d7e6f1}
+    .contact{border:1px solid #3a645f;background:linear-gradient(115deg,#173331,#182337);padding:clamp(25px,5vw,50px);border-radius:22px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact h2{font-size:clamp(27px,4vw,38px);margin:0 0 8px}.contact p{color:var(--muted);margin:0}.footer{display:flex;justify-content:space-between;gap:15px;padding:26px 0 34px;border-top:1px solid var(--edge);font-size:13px;color:var(--muted)}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:60px 0}.art{max-width:390px;width:100%;justify-self:center}.cards{grid-template-columns:1fr}.story{grid-template-columns:1fr}.navlinks{gap:12px}.contact{flex-direction:column;align-items:start}.section-top{display:block}.footer{flex-direction:column}.hero h1{font-size:58px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav" aria-label="主要導覽"><a class="logo" href="#top">Phoebe<span>.</span></a><div class="navlinks"><a href="#about">關於我</a><a href="#work">我在做的事</a><a href="#contact">聯絡我</a></div></nav>
+    <main id="top">
+      <header class="hero">
+        <div><div class="eyebrow">Cybersecurity · Education · Building</div><h1>嗨，我是<br><span>飛飛。</span></h1><p class="lead">把複雜的資安知識講清楚，<br>讓更多人有機會親手實作。</p><p class="desc">我是 Phoebe，一名資安講師、滲透測試實作者，也是持續探索教育與科技可能性的創業者。我相信資安不只屬於少數專家，而是可以透過好的教學與練習，被更多人理解與掌握。</p><div class="actions"><a class="btn primary" href="https://feifei.tw/" target="_blank" rel="noopener noreferrer">前往我的網站 ↗</a><a class="btn" href="#work">認識我的工作 ↓</a></div></div>
+        <div class="art" aria-label="飛飛的個人形象字母圖"><div class="avatar" aria-hidden="true">F.</div><span class="arttag">LEARN · HACK · CREATE</span></div>
+      </header>
+      <section id="work" aria-labelledby="work-heading"><div class="section-top"><h2 id="work-heading">我在做的事</h2><p>從理解原理，到真正動手做。</p></div><div class="cards"><article class="card"><span class="num">01 / TEACH</span><h3>資安教學與培訓</h3><p>設計實務導向的課程，陪伴初學者與技術工作者建立資安觀念、學習路線與可持續的練習習慣。</p></article><article class="card"><span class="num">02 / HACK</span><h3>滲透測試與研究</h3><p>關注網站安全、Windows 與 Active Directory 安全，從漏洞成因到驗證流程，重視理解而非只會操作工具。</p></article><article class="card"><span class="num">03 / BUILD</span><h3>資安實作平台</h3><p>打造具備引導步驟、練習任務及實驗環境的學習工具，降低從「看懂」到「真的做出來」的門檻。</p></article></div></section>
+      <section id="about" aria-labelledby="about-heading"><div class="section-top"><h2 id="about-heading">關於我</h2></div><div class="story"><blockquote class="quote">「我想讓資安變得更容易開始，也讓每個學習者都能走得更遠。」</blockquote><div><p>我喜歡拆解難題，也喜歡把技術整理成別人能理解的語言。除了資安技術與教學，我也持續探索 AI、產品設計、創業與學習系統化，希望讓知識不只停留在內容，而能成為真實的能力。</p><p>目前持續投入資安課程、演練環境與學習工具的設計，也樂於和教育者、工程師及創作者交流合作。</p><div class="tags"><span class="tag">Web Security</span><span class="tag">Penetration Testing</span><span class="tag">Cyber Range</span><span class="tag">AI × Education</span><span class="tag">Learning by Doing</span></div></div></div></section>
+      <section id="contact" aria-labelledby="contact-heading"><div class="contact"><div><h2 id="contact-heading">一起交流，創造更多可能。</h2><p>課程合作、講座邀約、技術交流，歡迎從個人網站找到我。</p></div><a class="btn primary" href="https://feifei.tw/" target="_blank" rel="noopener noreferrer">聯絡飛飛 ↗</a></div></section>
+    </main>
+    <footer class="footer"><span>© <span id="year">2026</span> Phoebe / 飛飛</span><span>Built with curiosity, shared with care.</span></footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
